@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="container">
+        <h1 id="heading">Currency Converter</h1>
+        <form id="form">
+            <div id="input">
+                <p> Enter ur amount</p>
+                <input type="text" id="amount" placeholder="amount">
+                <p class="result"></p>
+                <div class="dropdown-container">
+                    <div class="dropdown">
+                        <p>From</p>
+                        <img src="https://flagsapi.com/US/shiny/64.png"/>
+                        <select id="from" class="select">
+                        </select>
+                    </div> 
+                    <div id="icon">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </div>
+                    
+                    <div class="dropdown">
+                        <p>To</p>
+                        <img src="https://flagsapi.com/IN/shiny/64.png"/>
+                        <select id="to" class="select">
+                        </select>
+                    </div> 
+
+                </div>
+                
+                <button id="btn" >Convert</button>               
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="countrylist.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    
+</body>
+</html>
